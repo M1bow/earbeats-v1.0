@@ -1,0 +1,71 @@
+main,
+.searchdiv,
+.results,
+.results a {
+  display: flex;
+}
+
+main {
+  background-color: var(--bg-color);
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  text-transform: capitalize;
+  /* width: 100%; */
+
+  .searchdiv {
+    button {
+      border: none;
+      background-color: transparent;
+    }
+    padding: 1rem 1rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+    input {
+      width: 90%;
+      padding: 1rem;
+      outline: none;
+      border-radius: 1rem;
+      border: none;
+      background-color: var(--bg-color);
+      color: var(--hover-color);
+      font-family: var(--font);
+    }
+    span {
+      padding: 0.5rem;
+      border-radius: 2rem;
+      color: var(--hover-color);
+    }
+    .filter {
+      background-color: var(--hover-color);
+      color: var(--bg-color);
+    }
+  }
+
+  h3 {
+    align-self: flex-start;
+    margin: 0.5rem 1rem;
+    font-weight: 500;
+    color: var(--icon-color);
+  }
+  .results {
+    margin: 1rem;
+    list-style: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: calc(100% - 2rem);
+    height: 100%;
+    a {
+      padding: 0.5rem;
+      justify-content: space-between;
+      color: var(--icon-color);
+    }
+  }
+}

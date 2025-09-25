@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>earbeats</title>
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--  google icon -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- external -->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="./home.html">
+          <div class="brand">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+          </div>
+        </a>
+      </div>
+      <ul>
+        <li data-txt="Home">
+          <a href="./index.html"
+            ><span class="material-symbols-outlined"> home </span></a
+          >
+        </li>
+        <li data-txt="Wishlist">
+          <a class="active" href="./wishlist.html"
+            ><span class="material-symbols-outlined"> favorite </span></a
+          >
+        </li>
+        <li data-txt="Search">
+          <a class="search" href="./search.html"
+            ><span class="material-symbols-outlined"> search </span></a
+          >
+        </li>
+        <li data-txt="Account">
+          <a href="./profile.html"
+            ><span class="material-symbols-outlined"> account_circle </span></a
+          >
+        </li>
+      </ul>
+      <ul class="settings">
+        <li data-txt="Light Mode">
+          <span class="material-symbols-outlined"> light_mode </span>
+          <!-- <span class="material-symbols-outlined">
+      dark_mode
+      </span> -->
+        </li>
+        <li data-txt="Log Out">
+          <span class="material-symbols-outlined"> logout </span>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <aside>
+        <div class="path">
+          <div class="logo">
+            <a href="">
+              <div class="brand">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+              </div>
+            </a>
+            <div class="root"></div>
+          </div>
+        </div>
+        <div class="btns">
+          <div class="search">
+            <input type="text" placeholder="Search" />
+            <span id="search" class="material-symbols-outlined"> search </span>
+          </div>
+          <div data-txt="Light Mode">
+            <span class="material-symbols-outlined"> light_mode </span>
+          </div>
+          <div class="cart">
+            <button class="cartBtn">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </button>
+          </div>
+        </div>
+      </aside>
+      <section class="slider-view">
+        <section class="slider">
+          <header>
+            <div class="head"><h2>WishList</h2></div>
+            <div class="counter">
+              <div class="cur">01</div>
+              /
+              <div class="total">06</div>
+            </div>
+          </header>
+          <div class="list">
+            <div class="item">
+              <div class="title">Soundcore</div>
+              <img src="../media/imgs/products/earbuds/p1.png" alt="" />
+            </div>
+            <div class="item">
+              <div class="title">Soundcore</div>
+              <img src="../media/imgs/products/earbuds/p2.png" alt="" />
+            </div>
+            <div class="item">
+              <div class="title">Soundcore</div>
+              <img src="../media/imgs/products/earbuds/p3.png" alt="" />
+            </div>
+            <div class="item">
+              <div class="title">Soundcore</div>
+              <img src="../media/imgs/products/earbuds/p1.png" alt="" />
+            </div>
+            <div class="item">
+              <div class="title">Soundcore</div>
+              <img src="../media/imgs/products/earbuds/p3.png" alt="" />
+            </div>
+            <div class="item">
+              <div class="title">Soundcore</div>
+              <img src="../media/imgs/products/earbuds/p3.png" alt="" />
+            </div>
+          </div>
+          <div class="add">
+            <button id="addToCart">+</button>
+          </div>
+        </section>
+        <section class="slider-info">
+          <div class="slider-info-card">
+            <h3>General</h3>
+
+            <div class="overview">
+              <div class="content">
+                <div class="item-img"></div>
+                <div class="item-detail">
+                  <h4 class="price">$ 284</h4>
+                  <h5 class="item-name">Life Q20i</h5>
+                  <div class="rate">
+                    <div class="stars"><i class="bx bxs-star"></i>5.0</div>
+                    <span>(24 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="fav">
+                <button id="favBtn">
+                  <i class="bx bxs-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="colors">
+              <div class="clr"></div>
+              <div class="clr"></div>
+              <div class="clr"></div>
+            </div>
+            <div class="imgs">
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+            </div>
+            <div class="description">
+              <span>Description</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                sequi, corrupti necessitatibus quam harum tempore, aliquam iste
+                dolore obcaecati numquam assumenda maxime non. Dolorem modi
+                voluptatibus tempora libero maxime fugit voluptas? Eius
+                laboriosam fugit tenetur corrupti. Magni vel neque, sequi
+                consectetur, est placeat, esse totam laboriosam sed nihil porro
+                saepe!
+              </p>
+            </div>
+            <div class="keys">
+              <h4>Technical Specification</h4>
+              <div class="tech">
+                <div class="battry">
+                  <span class="material-symbols-outlined"> battery_5_bar </span>
+                  30h
+                </div>
+                <div class="charging">
+                  <span class="material-symbols-outlined">
+                    battery_charging_80
+                  </span>
+                  3.5h
+                </div>
+                <div class="freq-response">
+                  <span class="material-symbols-outlined"> discover_tune </span
+                  >4 Hz - $40,000 Hz
+                </div>
+                <div class="impedence">
+                  <span class="material-symbols-outlined">
+                    special_character </span
+                  >48ohms (active) ,16ohms (passive)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-info-card">
+            <h3>General</h3>
+
+            <div class="overview">
+              <div class="content">
+                <div class="item-img"></div>
+                <div class="item-detail">
+                  <h4 class="price">$ 284</h4>
+                  <h5 class="item-name">Life Q20i</h5>
+                  <div class="rate">
+                    <div class="stars"><i class="bx bxs-star"></i>5.0</div>
+                    <span>(24 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="fav">
+                <button id="favBtn">
+                  <i class="bx bxs-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="colors">
+              <div class="clr"></div>
+              <div class="clr"></div>
+              <div class="clr"></div>
+            </div>
+            <div class="imgs">
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+            </div>
+            <div class="description">
+              <span>Description</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                sequi, corrupti necessitatibus quam harum tempore, aliquam iste
+                dolore obcaecati numquam assumenda maxime non. Dolorem modi
+                voluptatibus tempora libero maxime fugit voluptas? Eius
+                laboriosam fugit tenetur corrupti. Magni vel neque, sequi
+                consectetur, est placeat, esse totam laboriosam sed nihil porro
+                saepe!
+              </p>
+            </div>
+            <div class="keys">
+              <h4>Technical Specification</h4>
+              <div class="tech">
+                <div class="battry">
+                  <span class="material-symbols-outlined"> battery_5_bar </span>
+                  30h
+                </div>
+                <div class="charging">
+                  <span class="material-symbols-outlined">
+                    battery_charging_80
+                  </span>
+                  3.5h
+                </div>
+                <div class="freq-response">
+                  <span class="material-symbols-outlined"> discover_tune </span
+                  >4 Hz - $40,000 Hz
+                </div>
+                <div class="impedence">
+                  <span class="material-symbols-outlined">
+                    special_character </span
+                  >48ohms (active) ,16ohms (passive)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-info-card active">
+            <h3>General</h3>
+
+            <div class="overview">
+              <div class="content">
+                <div class="item-img"></div>
+                <div class="item-detail">
+                  <h4 class="price">$ 284</h4>
+                  <h5 class="item-name">Life Q20i</h5>
+                  <div class="rate">
+                    <div class="stars"><i class="bx bxs-star"></i>5.0</div>
+                    <span>(24 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="fav">
+                <button id="favBtn">
+                  <i class="bx bxs-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="colors">
+              <div class="clr"></div>
+              <div class="clr"></div>
+              <div class="clr"></div>
+            </div>
+            <div class="imgs">
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+            </div>
+            <div class="description">
+              <span>Description</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                sequi, corrupti necessitatibus quam harum tempore, aliquam iste
+                dolore obcaecati numquam assumenda maxime non. Dolorem modi
+                voluptatibus tempora libero maxime fugit voluptas? Eius
+                laboriosam fugit tenetur corrupti. Magni vel neque, sequi
+                consectetur, est placeat, esse totam laboriosam sed nihil porro
+                saepe!
+              </p>
+            </div>
+            <div class="keys">
+              <h4>Technical Specification</h4>
+              <div class="tech">
+                <div class="battry">
+                  <span class="material-symbols-outlined"> battery_5_bar </span>
+                  30h
+                </div>
+                <div class="charging">
+                  <span class="material-symbols-outlined">
+                    battery_charging_80
+                  </span>
+                  3.5h
+                </div>
+                <div class="freq-response">
+                  <span class="material-symbols-outlined"> discover_tune </span
+                  >4 Hz - $40,000 Hz
+                </div>
+                <div class="impedence">
+                  <span class="material-symbols-outlined">
+                    special_character </span
+                  >48ohms (active) ,16ohms (passive)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-info-card">
+            <h3>General</h3>
+
+            <div class="overview">
+              <div class="content">
+                <div class="item-img"></div>
+                <div class="item-detail">
+                  <h4 class="price">$ 284</h4>
+                  <h5 class="item-name">Life Q20i</h5>
+                  <div class="rate">
+                    <div class="stars"><i class="bx bxs-star"></i>5.0</div>
+                    <span>(24 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="fav">
+                <button id="favBtn">
+                  <i class="bx bxs-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="colors">
+              <div class="clr"></div>
+              <div class="clr"></div>
+              <div class="clr"></div>
+            </div>
+            <div class="imgs">
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+            </div>
+            <div class="description">
+              <span>Description</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                sequi, corrupti necessitatibus quam harum tempore, aliquam iste
+                dolore obcaecati numquam assumenda maxime non. Dolorem modi
+                voluptatibus tempora libero maxime fugit voluptas? Eius
+                laboriosam fugit tenetur corrupti. Magni vel neque, sequi
+                consectetur, est placeat, esse totam laboriosam sed nihil porro
+                saepe!
+              </p>
+            </div>
+            <div class="keys">
+              <h4>Technical Specification</h4>
+              <div class="tech">
+                <div class="battry">
+                  <span class="material-symbols-outlined"> battery_5_bar </span>
+                  30h
+                </div>
+                <div class="charging">
+                  <span class="material-symbols-outlined">
+                    battery_charging_80
+                  </span>
+                  3.5h
+                </div>
+                <div class="freq-response">
+                  <span class="material-symbols-outlined"> discover_tune </span
+                  >4 Hz - $40,000 Hz
+                </div>
+                <div class="impedence">
+                  <span class="material-symbols-outlined">
+                    special_character </span
+                  >48ohms (active) ,16ohms (passive)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-info-card">
+            <h3>General</h3>
+
+            <div class="overview">
+              <div class="content">
+                <div class="item-img"></div>
+                <div class="item-detail">
+                  <h4 class="price">$ 284</h4>
+                  <h5 class="item-name">Life Q20i</h5>
+                  <div class="rate">
+                    <div class="stars"><i class="bx bxs-star"></i>5.0</div>
+                    <span>(24 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="fav">
+                <button id="favBtn">
+                  <i class="bx bxs-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="colors">
+              <div class="clr"></div>
+              <div class="clr"></div>
+              <div class="clr"></div>
+            </div>
+            <div class="imgs">
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+            </div>
+            <div class="description">
+              <span>Description</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                sequi, corrupti necessitatibus quam harum tempore, aliquam iste
+                dolore obcaecati numquam assumenda maxime non. Dolorem modi
+                voluptatibus tempora libero maxime fugit voluptas? Eius
+                laboriosam fugit tenetur corrupti. Magni vel neque, sequi
+                consectetur, est placeat, esse totam laboriosam sed nihil porro
+                saepe!
+              </p>
+            </div>
+            <div class="keys">
+              <h4>Technical Specification</h4>
+              <div class="tech">
+                <div class="battry">
+                  <span class="material-symbols-outlined"> battery_5_bar </span>
+                  30h
+                </div>
+                <div class="charging">
+                  <span class="material-symbols-outlined">
+                    battery_charging_80
+                  </span>
+                  3.5h
+                </div>
+                <div class="freq-response">
+                  <span class="material-symbols-outlined"> discover_tune </span
+                  >4 Hz - $40,000 Hz
+                </div>
+                <div class="impedence">
+                  <span class="material-symbols-outlined">
+                    special_character </span
+                  >48ohms (active) ,16ohms (passive)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-info-card">
+            <h3>General</h3>
+
+            <div class="overview">
+              <div class="content">
+                <div class="item-img"></div>
+                <div class="item-detail">
+                  <h4 class="price">$ 284</h4>
+                  <h5 class="item-name">Life Q20i</h5>
+                  <div class="rate">
+                    <div class="stars"><i class="bx bxs-star"></i>5.0</div>
+                    <span>(24 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="fav">
+                <button id="favBtn">
+                  <i class="bx bxs-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="colors">
+              <div class="clr"></div>
+              <div class="clr"></div>
+              <div class="clr"></div>
+            </div>
+            <div class="imgs">
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+            </div>
+            <div class="description">
+              <span>Description</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                sequi, corrupti necessitatibus quam harum tempore, aliquam iste
+                dolore obcaecati numquam assumenda maxime non. Dolorem modi
+                voluptatibus tempora libero maxime fugit voluptas? Eius
+                laboriosam fugit tenetur corrupti. Magni vel neque, sequi
+                consectetur, est placeat, esse totam laboriosam sed nihil porro
+                saepe!
+              </p>
+            </div>
+            <div class="keys">
+              <h4>Technical Specification</h4>
+              <div class="tech">
+                <div class="battry">
+                  <span class="material-symbols-outlined"> battery_5_bar </span>
+                  30h
+                </div>
+                <div class="charging">
+                  <span class="material-symbols-outlined">
+                    battery_charging_80
+                  </span>
+                  3.5h
+                </div>
+                <div class="freq-response">
+                  <span class="material-symbols-outlined"> discover_tune </span
+                  >4 Hz - $40,000 Hz
+                </div>
+                <div class="impedence">
+                  <span class="material-symbols-outlined">
+                    special_character </span
+                  >48ohms (active) ,16ohms (passive)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-info-card">
+            <h3>General</h3>
+
+            <div class="overview">
+              <div class="content">
+                <div class="item-img"></div>
+                <div class="item-detail">
+                  <h4 class="price">$ 284</h4>
+                  <h5 class="item-name">Life Q20i</h5>
+                  <div class="rate">
+                    <div class="stars"><i class="bx bxs-star"></i>5.0</div>
+                    <span>(24 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="fav">
+                <button id="favBtn">
+                  <i class="bx bxs-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="colors">
+              <div class="clr"></div>
+              <div class="clr"></div>
+              <div class="clr"></div>
+            </div>
+            <div class="imgs">
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+            </div>
+            <div class="description">
+              <span>Description</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                sequi, corrupti necessitatibus quam harum tempore, aliquam iste
+                dolore obcaecati numquam assumenda maxime non. Dolorem modi
+                voluptatibus tempora libero maxime fugit voluptas? Eius
+                laboriosam fugit tenetur corrupti. Magni vel neque, sequi
+                consectetur, est placeat, esse totam laboriosam sed nihil porro
+                saepe!
+              </p>
+            </div>
+            <div class="keys">
+              <h4>Technical Specification</h4>
+              <div class="tech">
+                <div class="battry">
+                  <span class="material-symbols-outlined"> battery_5_bar </span>
+                  30h
+                </div>
+                <div class="charging">
+                  <span class="material-symbols-outlined">
+                    battery_charging_80
+                  </span>
+                  3.5h
+                </div>
+                <div class="freq-response">
+                  <span class="material-symbols-outlined"> discover_tune </span
+                  >4 Hz - $40,000 Hz
+                </div>
+                <div class="impedence">
+                  <span class="material-symbols-outlined">
+                    special_character </span
+                  >48ohms (active) ,16ohms (passive)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="cart-list">
+      <div class="head">
+        <div class="txt">
+          <h2>Shopping Cart</h2>
+          <button id="removeAllBtn">remove all</button>
+        </div>
+        <button id="closeBtn" class="closeBtn">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+      </div>
+      <div class="items-list">
+        <div class="item">
+          <div class="img">
+            <button id="removeBtn">
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+          </div>
+          <div class="info">
+            <div class="name">
+              <h4>item name</h4>
+              <span>company</span>
+            </div>
+
+            <div class="quantity">
+              <div class="minus">-</div>
+              <div class="num">1</div>
+              <div class="plus">+</div>
+            </div>
+
+            <div class="total">
+              <h4>total</h4>
+              <span>$199</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <button id="removeBtn">
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+          </div>
+          <div class="info">
+            <div class="name">
+              <h4>item name</h4>
+              <span>company</span>
+            </div>
+
+            <div class="quantity">
+              <div class="minus">-</div>
+              <div class="num">1</div>
+              <div class="plus">+</div>
+            </div>
+
+            <div class="total">
+              <h4>total</h4>
+              <span>$199</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <button id="removeBtn">
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+          </div>
+          <div class="info">
+            <div class="name">
+              <h4>item name</h4>
+              <span>company</span>
+            </div>
+
+            <div class="quantity">
+              <div class="minus">-</div>
+              <div class="num">1</div>
+              <div class="plus">+</div>
+            </div>
+
+            <div class="total">
+              <h4>total</h4>
+              <span>$199</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btns">
+        <button id="checkout">Check Out</button>
+      </div>
+    </div>
+    <script type="module" src="../js/main/products.js"></script>
+    <script type="module" src="../js/main/main.js"></script>
+    <script type="module" src="../js/main/cart.js"></script>
+    <script type="module" src="../js/main/addToCart.js"></script>
+
+    <script type="module" src="../js/main/lightmode.js"></script>
+  </body>
+</html>

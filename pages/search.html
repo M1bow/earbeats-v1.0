@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>earbeats</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/search.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="./home.html">
+          <div class="brand">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+          </div>
+        </a>
+      </div>
+
+      <ul>
+        <li data-txt="Home">
+          <a href="./index.html"
+            ><span class="material-symbols-outlined"> home </span></a
+          >
+        </li>
+        <li data-txt="Wishlist">
+          <a href="./wishlist.html"
+            ><span class="material-symbols-outlined"> favorite </span></a
+          >
+        </li>
+        <li data-txt="Search">
+          <a class="search active" href="./profile.html"
+            ><span class="material-symbols-outlined"> search </span></a
+          >
+        </li>
+
+        <li data-txt="Account">
+          <a href="./profile.html"
+            ><span class="material-symbols-outlined"> account_circle </span></a
+          >
+        </li>
+      </ul>
+      <ul class="settings">
+        <li data-txt="Light Mode">
+          <span class="material-symbols-outlined"> light_mode </span>
+          <!-- <span class="material-symbols-outlined">
+  dark_mode
+  </span> -->
+        </li>
+        <li data-txt="Log Out">
+          <span class="material-symbols-outlined"> logout </span>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="searchdiv">
+        <input type="text" placeholder="Search" />
+        <button>
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined filter"> tune </span>
+        </button>
+      </div>
+
+      <h3>recently</h3>
+      <ul class="results">
+        <li>
+          <a href="">
+            librety 3 pro
+            <span class="material-symbols-outlined"> north_east </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            life q20<span class="material-symbols-outlined"> north_east </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            sony WH-1000M4<span class="material-symbols-outlined">
+              north_east
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            sony WH-1000M5<span class="material-symbols-outlined">
+              north_east
+            </span>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <script src="../js/main/lightmode.js"></script>
+  </body>
+</html>
